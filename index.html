@@ -6,23 +6,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
     <link rel="stylesheet" href="style.css">
     <title>ข้อมูลชาย4</title>
-    <script>
-    function addComment() {
-        let input = document.getElementById("commentInput");
-        let commentList = document.getElementById("commentList");
-
-    if (input.value.trim() !== "") {
-        let newComment = document.createElement("div");
-
-        newComment.classList.add("comment");
-        newComment.innerText = input.value;
-
-        commentList.appendChild(newComment);
-
-        input.value = "";
-    }
-}
-</script>
 </head>
 <body>
     <header>
@@ -114,19 +97,6 @@
                 <h2>ไม่รู้จะใส่***อะไรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรร</h2>
             </div>
 
-        </section>
-
-        <section class="comment-box">
-            <h2>ความคิดเห็น</h2>
-
-            <textarea 
-                id="commentInput" 
-                placeholder="พิมพ์ความคิดเห็นของคุณ...">
-            </textarea>
-
-            <button onclick="addComment()">ส่งความคิดเห็น</button>
-
-            <div id="commentList"></div>
         </section>
 
     </footer>
