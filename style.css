@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+body{
+    margin: 0;
+    min-height: 100vh;
+    background-color: rgb(245, 244, 243);
+}
+
+.contor{
+    margin:0 auto;
+    max-width: 1300px;
+}
+
+#home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 40vh;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+#home img{
+    width: 100%;
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    object-fit: cover;
+    z-index:0;
+    top:0;
+    left: 0;
+    border-radius: 15px;
+}
+
+header{
+    padding:5px;
+    background-color: rgb(127, 212, 146);
+}
+
+.header-container{
+    margin:0 auto;
+    justify-content: space-between;
+    align-items: center;
+    display:flex;
+    max-width: 1300px;
+}
+
+header h2{
+    font-size: 25px;
+}
+
+header nav a{
+    text-decoration: none;
+}
+
+.container{
+    position: relative;
+    z-index: 1;
+    width: 200px;
+    height: 250px;
+    transform-style: preserve-3d;
+    animation: animate 10s linear infinite;
+}
+
+.card{
+    position: absolute;
+    inset: 0;
+    border-radius: 2rem;
+    background-size: cover;
+    background-position: center;
+    box-shadow:
+        0 20px 40px rgba(0,0,0,.55),
+        0 8px 15px rgba(0,0,0,.35);
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2rem;
+}
+
+.P{
+    transform: rotateY(0deg) translateZ(150px);
+}
+
+.I{
+    transform: rotateY(90deg) translateZ(150px);
+}
+
+.Pr{
+    transform: rotateY(180deg) translateZ(150px);
+}
+
+.Po{
+    transform:rotateY(270deg) translateZ(150px);
+}
+
+@keyframes animate{
+    from{
+        transform: rotateY(0deg)
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+}
+
+.P{
+    font-size: 25px;
+    text-align: center;
+}
+
+#about{
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.cards{
+    width:250px;
+    height: 300px;
+    border-radius: 20px 40% 30px 60px;
+    background-color: white;
+    box-shadow: 0 20px 40px rgba(0,0,0,.55);
+    margin: 10px;
+    padding: 20px;
+}
+
+.cards img{
+    width: 250px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 5px 40% 30px 60px;
+}
+
+.cards a{
+    text-decoration: none;
+    font-size: 16px;
+    text-align: right;
+    display: block;
+    margin-top: -42px;
+}
+
+#contact{
+    margin: 0 auto;
+    max-width: 1300px;
+    justify-content: space-between;
+    display: flex;
+}
+
+.contact-a a{
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.contact-a{
+    width: 30%;
+    padding-left: 50px;
+}
+
+.op{
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.comment-box{
+    width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.comment-box h2{
+    text-align: center;
+}
+
+.comment-box textarea{
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    box-sizing: border-box;
+    resize: none;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.comment-box button{
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(127, 212, 146);
+    cursor: pointer;
+}
+
+.comment-box button:hover{
+    opacity: 0.8;
+}
+
+.comment{
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+}

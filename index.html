@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>ข้อมูลชาย4</title>
+    <script>
+    function addComment() {
+        let input = document.getElementById("commentInput");
+        let commentList = document.getElementById("commentList");
+
+    if (input.value.trim() !== "") {
+        let newComment = document.createElement("div");
+
+        newComment.classList.add("comment");
+        newComment.innerText = input.value;
+
+        commentList.appendChild(newComment);
+
+        input.value = "";
+    }
+}
+</script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h2>ชาย4หมี่เกี๊ยว</h2>
+
+            <nav>
+                <a href="#home">หน้าแรก</a>
+                <a href="#about">เกี่ยวกับ</a>
+                <a href="#">เข้าสู่ระบบ</a>
+            </nav>
+
+        </div>
+        
+    </header>
+
+    <section class="contor">
+
+        <section id="home">
+
+            <img src="https://as2.ftcdn.net/v2/jpg/09/21/96/63/1000_F_921966391_a4A5STKT1M5bWSH7S93uNYDRl6J6tQXV.jpg" alt="">
+
+            <nav class="container">
+
+                <div class="card P">
+                    <img src="P.jpg" alt="">
+                </div>
+                <div class="card I">
+                    <img src="I.jpg" alt="">
+               </div>
+                <div class="card Pr">
+                    <img src="Pr.jpg" alt="">
+               </div>
+               <div class="card Po">
+                    <img src="Po.jpg" alt="">
+                </div>
+            
+            </nav>
+
+        </section>
+
+        <nav class="P">
+            <h2>แก๊งชายสี่บะหมี่เกี๊ยว แห่งบูรพาปราจีน</h2>
+            <p>รวมตัวตึงทั้ง4 ของสาขาเทคโนโลยีธุรกิจดิจิทัล ของบูรพาปราจีนไว้ที่นี้หมดแล้ว ทุกท่านสามารถทำความรู้จักกับบุคลตัวตึงเหล่านี้ได้แล้วที่นี้ !!</p>
+
+        </nav>
+
+        <section id="about">
+            <div class="cards">
+                <img src="P.jpg" alt="">
+                <h2>ชาย P</h2>
+                <a href="aboutP.html" target="_blank">เกี่ยวกับ P</a>
+            </div>
+
+            <div class="cards">
+                <img src="I.jpg" alt="">
+                <h2>4 ไอ้</h2>
+                <a href="aboutI.html" target="_blank">เกี่ยวกับ ไอ้</a>
+            </div>
+
+            <div class="cards">
+                <img src="Pr.jpg" alt="">
+                <h2>หมี่ ปริ้น</h2>
+                <a href="aboutPr.html">เกี่ยวกับ ปริ้น</a>
+            </div>
+
+            <div class="cards">
+                <img src="Po.jpg" alt="">
+                <h2>เกี๊ยว ป๊อก</h2>
+                <a href="aboutPo.html">เกี่ยวกับ ป๊อก</a>
+            </div>
+
+        </section>
+
+    </section>
+
+    <footer>
+
+        <section id="contact">
+
+            <div class="contact-a">
+                <h2>ช่องทางติดต่อ</h2>
+                <a href="https://www.facebook.com/pe.thanaphat.2025?locale=th_TH"><i class="ri-facebook-box-fill"></i><span> P Thanaphat</span></a><br>
+                <a href="#"><i class="ri-line-fill"></i><span> Thanaphat</span></a><br>
+                <a href="#"><i class="ri-tiktok-fill"></i><span> @pe69_58</span></a>
+            </div>
+
+            <div class="op">
+                <h2>ไม่รู้จะใส่***อะไรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรร</h2>
+            </div>
+
+        </section>
+
+        <section class="comment-box">
+            <h2>ความคิดเห็น</h2>
+
+            <textarea 
+                id="commentInput" 
+                placeholder="พิมพ์ความคิดเห็นของคุณ...">
+            </textarea>
+
+            <button onclick="addComment()">ส่งความคิดเห็น</button>
+
+            <div id="commentList"></div>
+        </section>
+
+    </footer>
+
+</body>
+</html>
